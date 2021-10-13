@@ -32,6 +32,7 @@ console.log('VIDEO 3 TEST')
             s.onload = cb;
     }
     var me = document.currentScript;
+console.log('ME PARENT',me.parentElement)
     var children = me.parentElement.children
     for (var i=0; i < children.length; i++) {
             if (!children[i].classList.contains("noremove")) {
