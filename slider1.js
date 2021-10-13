@@ -5,6 +5,7 @@ console.log('VIDEO 3 TEST')
         videoId: "6276482491001"
     };
     function addPlayer(el, cb) {
+        console.log('ADD PLAYER')
         // Dynamically build the player video element
         playerHTML =
             '<video-js data-video-id="' +
@@ -40,6 +41,7 @@ console.log('VIDEO 3 TEST')
         }
         function init(){
             if (window.bc) {
+                console.log('WINDOW BC')
                 var videotag = me.parentElement.getElementsByClassName('vjs-fluid')[0];
                 myPlayer = bc(videotag);
                 console.log(myPlayer)
